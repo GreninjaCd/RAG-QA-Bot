@@ -3,6 +3,8 @@
 ## Overview
 RAG-QA Bot is a question-answering system that uses Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses based on provided documents.
 
+This app's knowledge base is a local document corpus stored in the `chroma_db` vector store. It answers questiosn related to Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. It retrieves relevant document chunks using embeddings, then passes those retrieved passages to the LLM so answers are grounded in the indexed source material.
+
 ## Features
 - Document retrieval and indexing
 - Question answering with source attribution
