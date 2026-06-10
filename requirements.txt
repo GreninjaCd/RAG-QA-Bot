@@ -11,3 +11,4 @@ huggingface-hub
 transformers
 gradio
 sentence-transformers
+protobuf>=4.23.0,<5

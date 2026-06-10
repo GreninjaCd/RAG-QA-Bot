@@ -3,7 +3,7 @@
 ## Overview
 RAG-QA Bot is a question-answering system that uses Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses based on provided documents.
 
-This app's knowledge base is a local document corpus stored in the `chroma_db` vector store. It answers questiosn related to Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. It retrieves relevant document chunks using embeddings, then passes those retrieved passages to the LLM so answers are grounded in the indexed source material.
+This app's knowledge base is a local document corpus stored in the `chroma_db` vector store. It answers questions related to Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. It retrieves relevant document chunks using embeddings, then passes those retrieved passages to the LLM so answers are grounded in the indexed source material.
 
 ## Features
 - Document retrieval and indexing
@@ -35,7 +35,7 @@ RAG-QA Bot/
 ```
 
 ## Requirements
-- Python 3.8+
+- Python 3.10 or 3.11 recommended
 - See `requirements.txt` for dependencies
 
 ## Deploying to Streamlit Cloud
@@ -43,6 +43,7 @@ RAG-QA Bot/
 2. Add a `requirements.txt` (already included).
 3. Add any API keys to Streamlit secrets or a `.env` file and set them in the Streamlit Cloud UI.
 4. On Streamlit Cloud, select the GitHub repo and the `chatbot_streamlit.py` file as the app entrypoint.
+5. Add a `runtime.txt` file to pin the Python version, for example `python-3.10.11`.
 
 Notes:
 - If `ChatGroq` requires provider credentials, add them to `.env` or Streamlit secrets before deploying.
