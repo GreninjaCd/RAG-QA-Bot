@@ -1,5 +1,5 @@
 # Ignore the Chrome database and data directories
-chrome_db/
+#chrome_db/
 data/
 # Ignore environment files
 .env

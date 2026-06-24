@@ -12,3 +12,4 @@ transformers
 gradio
 sentence-transformers
 protobuf>=4.23.0,<5
+pysqlite3-binary

@@ -1,3 +1,11 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+import streamlit as st
+from langchain_groq import ChatGroq
+# ... rest of your imports
+
 import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
