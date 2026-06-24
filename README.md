@@ -1,5 +1,7 @@
 # RAG-QA Bot
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app/)
+
 ## Overview
 RAG-QA Bot is a question-answering system that uses Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses based on provided documents.
 
